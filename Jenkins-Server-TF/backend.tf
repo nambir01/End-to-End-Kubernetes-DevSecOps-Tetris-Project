@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket         = "k8s-tetris-proj"
     region         = "ap-south-1"
-    key            = "jenkins-server/terraform.tfstate"
+    key            = "jenkins-server/backend.tfstate"
     dynamodb_table = "k8s-tetris-Table"
     encrypt        = true
   }
