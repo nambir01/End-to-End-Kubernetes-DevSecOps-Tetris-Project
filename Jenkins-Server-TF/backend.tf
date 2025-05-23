@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "kubernetes-tetris-230525"
+    bucket         = "k8s-tetris-proj"
     region         = "ap-south-1"
-    key            = "End-to-End-Kubernetes-DevSecOps-Tetris-Project/Jenkins-Server-TF/terraform.tfstate"
-    dynamodb_table = "kubernetes-tetris-table-230525"
+    key            = "jenkins-server/terraform.tfstate"
+    dynamodb_table = "k8s-tetris-Table"
     encrypt        = true
   }
   required_version = ">=0.13.0"
