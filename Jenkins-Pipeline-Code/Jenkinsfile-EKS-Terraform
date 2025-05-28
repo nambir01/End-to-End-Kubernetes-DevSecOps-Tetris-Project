@@ -29,7 +29,7 @@ pipeline {
                 withAWS(credentials: 'Devsecops-proj', region: 'ap-south-1') {
                 dir('EKS-TF') {
                     script {
-                        sh 'terraform validate
+                        sh 'terraform validate'
                     }
                 }
                 }
